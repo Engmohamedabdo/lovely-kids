@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav-item {
+  font-size: 25px;
+}
+
+.nav-link {
+  color: white !important;
+  background-color: #6969691a;
+  margin: 5px;
+  border-radius: 6px;
+  transition: .5s;
+}
+
+.nav-link:hover {
+  font-size: 35px;
+  background-color: rgba(105, 105, 105, 0.5);
+}
+
+.logo .logo-t {
+  font-size: 35px;
+}
+
+a {
+  /* color: black !important; */
+  font-weight: 600;
+}
+
+
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  background-image: url("../images/wel.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-blend-mode: multiply; */
+  height: 450px;
+}
+
+.welcome .wel-right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+@media (max-width:990px) {
+  .welcome .wel-right {
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+  }
+
+  .welcome .wel-right p {
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width:500px) {
+  .welcome .wel-right {
+    top: 40%;
+  }
+}
+
+.welcome .wel-right h1,
+.welcome .wel-right p {
+  color: white;
+  font-weight: 600;
+}
+
+.welcome .wel-right p {
+  margin-top: 25px;
+  padding-left: 180px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.welcome .wel-left {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+@media (max-width:990px) {
+  .welcome .wel-left {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
+.welcome .wel-left h2 {
+  color: white;
+  font-weight: 600;
+}
+
+.welcome .wel-left button {
+  font-size: 30px;
+  transition: .5s;
+}
+
+.welcome .wel-left button:hover {
+  font-size: 40px;
+}
+
+.Features {
+  margin: 25px 0;
+}
+
+.Features .title {
+  text-align: center;
+}
+
+.Features .top-title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: 600;
+  transition: .5s;
+  cursor: none;
+}
+
+.top-title:hover {
+  font-size: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Features .cards {
+  display: flex;
+  margin: 10px 25px;
+}
+
+@media (max-width:1550px) {
+  .Features .cards {
+    flex-wrap: wrap;
+  }
+}
+
+.cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.cards .card:hover {
+  width: 400px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cards .card .title-card {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  transition: .5s;
+
+}
+
+.cards .card:hover .title-card {
+  font-size: 60px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  font-weight: 700;
+}
+
+.cards .card img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards .card .shadow {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+
+.cards .card:hover .shadow {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item img {
+  width: 100% !important;
+}
+
+
+.images .top-title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: 600;
+  transition: .5s;
+  cursor: none;
+}
+
+.images {
+  margin: 25px 0;
+}
+
+.images .title {
+  text-align: center;
+}
+
+.top-title:hover {
+  font-size: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image {
+  margin: 15px 25px;
+}
+
+.requests {
+  margin: 25px 0;
+}
+
+.requests .top-title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: 600;
+  transition: .5s;
+  cursor: none;
+}
+
+.requests {
+  margin: 25px 0;
+}
+
+.requests .title {
+  text-align: center;
+}
+
+.requests .top-title:hover {
+  font-size: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.request h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 10px 15px;
+  width: 450px;
+  height: 100px;
+  margin: 15px;
+  border-radius: 6px;
+  background-color: #ccc;
+  transition: .5s;
+}
+
+.request h2:hover {
+  width: 500px;
+  height: 120px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width:450px) {
+  .request h2 {
+    font-size: 16px;
+  }
+}
+
+
+.requests h1 .top-title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: 600;
+  transition: .5s;
+  cursor: none;
+}
+
+.requests {
+  margin: 25px 0;
+}
+
+.requests .title {
+  text-align: center;
+}
+
+h1 .call {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 25px;
+}
+
+h1 .call span a {
+  text-decoration: none;
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: .5s;
+}
+
+h1 .call span a:hover {
+  background-color: #686868;
+  color: white;
+}
+
+@media (max-width:1250px) {
+  h1 .call {
+    margin: 50px 0;
+  }
+
+  h1 .call span a {
+    display: block;
+    margin: 25px;
+  }
+}
+
+@media (max-width:450px) {
+  h1 .call span a {
+    font-size: 16px;
+  }
+}
