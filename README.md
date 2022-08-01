@@ -1,3 +1,3 @@
 # lovely-kids
 
-link Project https://engmohamedabdo.github.io/lovely-kids/
+Demo https://engmohamedabdo.github.io/lovely-kids/
